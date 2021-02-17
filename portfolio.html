@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./css/portfolio.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>portfolio</title>
+  </head>
+  <body>
+    <header class="header_area">
+      <span class="header_span">포트폴리오</span>
+    </header>
+    <div class="wrap">
+      <nav>
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a href="#table_element" class="link_internal">테이블 요소</a>
+          </li>
+          <li class="nav_item">
+            <a href="#form_element" class="link_internal">폼 요소</a>
+          </li>
+          <li class="nav_item">
+            <a href="#list_element" class="link_internal">리스트 요소</a>
+          </li>
+        </ul>
+      </nav>
+      <p class="main_title">구성 요소</p>
+      <article class="group_wrap">
+        <h2 class="haeading_garbage">display:none</h2>
+        <section class="group">
+          <h2 class="haeading_garbage">display:none</h2>
+          <p class="group_sub_heading" id="table_element">테이블요소</p>
+          <div class="group_content_area">
+            <table class="table content_item" id="table_childsize">
+              <caption class="group_content_heading">아동 사이즈</caption>
+              <colgroup>
+                <col span="11" class="table_row_property"/>
+              </colgroup>
+              <thead class="table_head_group">
+                <tr class="table_row">
+                  <th class="table_head" colspan="3" scope="col">구분</th>
+                  <th class="table_head" colspan="2" scope="colgroup">Small</th>
+                  <th class="table_head" colspan="2" scope="colgroup">Medium</th>
+                  <th class="table_head" colspan="2" scope="colgroup">Large</th>
+                  <th class="table_head" colspan="2" scope="col">X-Large</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table_row">
+                  <td class="table_column table_head_divide" colspan="2" rowspan="3" scope="rowgroup">
+                    미국 남아</br>
+                    [Boys 2-7]
+                  </td>
+                  <td class="table_column table_head_divide" scope="row">사이즈</td>
+                  <td class="table_column" scope="col">2T</td>
+                  <td class="table_column" scope="col">3T</td>
+                  <td class="table_column" scope="col">4T</td>
+                  <td class="table_column" scope="col">4</td>
+                  <td class="table_column" scope="col">5</td>
+                  <td class="table_column" scope="col">6</td>
+                  <td class="table_column" colspan="2" scope="col">7</td>
+                </tr>
+                <tr class="table_row">
+                  <td class="table_column table_head_divide" scope="row">키</td>
+                  <td class="table_column">84-91</td>
+                  <td class="table_column">91-99</td>
+                  <td class="table_column">91-99</td>
+                  <td class="table_column">99-107</td>
+                  <td class="table_column">107-114</td>
+                  <td class="table_column">114-122</td>
+                  <td class="table_column" colspan="2">122-130</td>
+                </tr>
+                <tr class="table_row">
+                  <td class="table_column table_head_divide" scope="row">몸무게</td>
+                  <td class="table_column">13-15</td>
+                  <td class="table_column">14-15</td>
+                  <td class="table_column">13-15</td>
+                  <td class="table_column">14-15</td>
+                  <td class="table_column">19-21</td>
+                  <td class="table_column">20-23</td>
+                  <td class="table_column" colspan="2">23-25</td>
+                </tr>
+              </tbody>
+              <tr class="table_row">
+                <td class="table_column table_head_divide" colspan="2" rowspan="3" scope="rowgroup">
+                  미국 여아</br>
+                  [Girls 2-6X]
+                </td>
+                <td class="table_column table_head_divide" scope="row">사이즈</td>
+                <td class="table_column">2T</td>
+                <td class="table_column">3T</td>
+                <td class="table_column">4T</td>
+                <td class="table_column">4</td>
+                <td class="table_column">5</td>
+                <td class="table_column">6</td>  
+                <td class="table_column" colspan="2">6X</td>
+              </tr>
+              <tr class="table_row">
+                <td class="table_column table_head_divide" scope="row">키</td>
+               <td class="table_column">84-91 </td>
+                <td class="table_column">91-99</td>
+                <td class="table_column">91-99</td>
+                <td class="table_column">99-107</td>
+                <td class="table_column">107-114</td>
+                <td class="table_column">114-122</td>
+                <td class="table_column" colspan="2">122-130</td>
+              </tr>
+              <tr class="table_row">
+                <td class="table_column table_head_divide" scope="row">몸무게</td>
+                <td class="table_column">13-15</td>
+                <td class="table_column">14-15</td>
+                <td class="table_column">13-15</td>
+                <td class="table_column">14-15</td>
+                <td class="table_column">19-21</td>
+                <td class="table_column">20-23</td>
+                <td class="table_column" colspan="2">23-25</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table content_item" id="table_refund_Amount">
+            <caption class="group_content_heading">
+              환불 가능 금액 조회
+            </caption>
+            <colgroup>
+              <col span="11" class="table_row_property"/>
+            </colgroup>
+            <thead class="table_head_group" id="table_refund_Amount_headgroup">
+              <tr class="table_row">
+                <td colspan="4" class="table_head_split" scope="col">구분</td>
+                <td colspan="2" scope="col">환불가능액</td>
+                <td colspan="2" scope="col">수수료</td>
+                <td colspan="2" scope="col">총 환불금액</td>
+                <td colspan="1"> </td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table_row">
+                <td colspan="4" class="table_head_split" scope="row">게임 보상금액</td>
+                <td colspan="2">100,000원</td>
+                <td colspan="2">1,000원</td>
+                <td colspan="2">99,000원</td>
+                <td colspan="1"> </td>
+              </tr>
+              <tr class="table_row">
+                <td colspan="4" class="table_head_split" scope="row">월정액제 보상금액</td>
+                <td colspan="2">10,000원</td>
+                <td colspan="2">5,000원</td>
+                <td colspan="2">5,000원</td>
+                <td colspan="1"> </td>
+              </tr>
+              <tr class="table_row">
+                <td colspan="4" class="table_head_split" scope="row">코인</td>
+                <td colspan="2">9,000원</td>
+                <td colspan="2">500원</td>
+                <td colspan="2">85,000원</td>
+                <td colspan="1"> </td>
+              </tr>
+            </tbody>
+            <tfoot class="tfoot">
+              <tr class="table_row">
+                <td colspan="4" class="table_head_split" scope="row">총합계</td>
+                <td colspan="2">119,000원</td>
+                <td colspan="2">6,500원</td>
+                <td colspan="2">112,500원</td>
+                <td colspan="1"> </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        </section>
+        <section class="group" id="form_element">
+          <h2 class="haeading_garbage">display:none</h2>
+          <p class="group_sub_heading">폼 요소</p>
+          <div class="group_content_area signup_area">
+            <p class="group_content_heading">회원가입</p>
+            <div class="signup_wrap">
+              <form method="POST">
+                <label class="input_title" for="userId">아이디</label>
+                <input type="text" class="input_area text_box_height" id="userId" name="userId" required>
+                
+                <label class="input_title" for="userPwd">비밀번호</label>
+                <input type="password" class="input_area text_box_height" id="userPwd" name="userPwd" required>
+                
+                <label class="input_title" for="userName">이름</label>
+                <input type="password" class="input_area text_box_height" id="userName" name="userName" required>
+                
+                <label for="birthdayYear" class="input_title">생년월일</label>
+                <select class="input_area select_birthday text_box_height" id="birthdayYear" name="birthdayYear" required>
+                  <option value="" selected>년도</option>
+                  <option value="2020">2020</option>
+                  <option value="2019">2019</option>
+                  <option value="2018">2018</option>
+                  <option value="2017">2017</option>
+                  <option value="2016">2016</option>
+                  <option value="2015">2015</option>
+                  <option value="2014">2014</option>
+                  <option value="2013">2013</option>
+                  <option value="2012">2012</option>
+                  <option value="2011">2011</option>
+                  <option value="2010">2010</option>
+                  <option value="2009">2009</option>
+                  <option value="2008">2008</option>
+                  <option value="2007">2007</option>
+                  <option value="2006">2006</option>
+                  <option value="2005">2005</option>
+                  <option value="2004">2004</option>
+                  <option value="2003">2003</option>
+                  <option value="2002">2002</option>
+                  <option value="2001">2001</option>
+                  <option value="2000">2000</option>
+                  <option value="1999">1999</option>
+                  <option value="1998">1998</option>
+                  <option value="1997">1997</option>
+                  <option value="1996">1996</option>
+                  <option value="1995">1995</option>
+                  <option value="1994">1994</option>
+                  <option value="1993">1993</option>
+                  <option value="1992">1992</option>
+                  <option value="1991">1991</option>
+                  <option value="1990">1990</option>
+                  <option value="1989">1989</option>
+                  <option value="1988">1988</option>
+                  <option value="1987">1987</option>
+                  <option value="1986">1986</option>
+                  <option value="1985">1985</option>
+                  <option value="1984">1984</option>
+                  <option value="1983">1983</option>
+                  <option value="1982">1982</option>
+                  <option value="1981">1981</option>
+                  <option value="1980">1980</option>
+                  <option value="1979">1979</option>
+                  <option value="1978">1978</option>
+                  <option value="1977">1977</option>
+                  <option value="1976">1976</option>
+                  <option value="1975">1975</option>
+                  <option value="1974">1974</option>
+                  <option value="1973">1973</option>
+                  <option value="1972">1972</option>
+                  <option value="1971">1971</option>
+                  <option value="1970">1970</option>
+                  <option value="1969">1969</option>
+                  <option value="1968">1968</option>
+                  <option value="1967">1967</option>
+                  <option value="1966">1966</option>
+                  <option value="1965">1965</option>
+                  <option value="1964">1964</option>
+                  <option value="1963">1963</option>
+                  <option value="1962">1962</option>
+                  <option value="1961">1961</option>
+                  <option value="1960">1960</option>
+                  <option value="1959">1959</option>
+                  <option value="1958">1958</option>
+                  <option value="1957">1957</option>
+                  <option value="1956">1956</option>
+                  <option value="1955">1955</option>
+                  <option value="1954">1954</option>
+                  <option value="1953">1953</option>
+                  <option value="1952">1952</option>
+                  <option value="1951">1951</option>
+                  <option value="1950">1950</option>
+                </select>
+
+                <select class="input_area select_birthday text_box_height" id="birthdayMonth" name="birthdayMonth" required>
+                  <option value="" selected>월</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+
+                <select class="input_area select_birthday text_box_height" id="birthdayDate" name="birthdayDate" required>
+                  <option value="" selected>일</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                  <option value="31">31</option>
+                </select>
+
+                <div class="input_title">성별</div>
+                <input type="radio" name="gender" id="man" required>
+                <label for="man" class="choice_box">남자</label>
+                <input type="radio" name="gender" id="woman">
+                <label for="woman" class="choice_box">여자</label>
+                
+                <label for="user-email" class="input_title ">이메일</label>
+                <input type="text" class="input_area text_box_height" id="user-email" name="user-email" placeholder="이메일 주소에 '@'를 포함해주세요." required>
+                
+                <form method="GET">
+                  <label class="input_title" for="phone_number">휴대전화</label>
+                  <input type="text" class="input_area phone_number_area text_box_height" id="phone_number" name="phone_number" placeholder="숫자만 입력해주세요." required>
+                  <button class="submit_button get_Number">인증번호 받기</button>
+                <input type="text" class="input_area text_box_height" name="certification_number" placeholder="인증번호를 입력해주세요." required>
+                
+                <div class="input_title">취미</div>
+                <input type="checkbox" name="exercise" id="exercise">
+                <label class="choice_box" for="exercise">운동</label>
+                <input type="checkbox" name="cooking" id="cooking">
+                <label class="choice_box" for="cooking">요리</label>
+                <input type="checkbox" name="trip" id="trip">
+                <label class="choice_box" for="trip">여행</label>
+                <input type="checkbox" name="game" id="game">
+                <label class="choice_box" for="game">게임</label>
+                <input type="checkbox" name="computer" id="computer">
+                <label class="choice_box" for="computer">컴퓨터</label>
+                <input type="checkbox" name="music" id="music">
+                <label class="choice_box" for="music">음악</label>
+                <input type="checkbox" name="movie" id="movie">
+                <label class="choice_box" for="movie">영화</label>
+                <input type="checkbox" name="reading" id="reading">
+                <label class="choice_box" for="reading">독서</label>
+                
+                <label>
+                  <div class="input_title">가입인사</div>
+                  <textarea class="input_area introduce" rows="10" name="introduce" required></textarea>
+                </label>
+                <button class="submit_button">가입하기</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="group" id="list_element">
+          <h2 class="haeading_garbage">display:none</h2>
+          <p class="group_sub_heading">리스트 요소</p>
+          <div class="group_content_area">
+            <div class="content_item">
+              <p class="group_content_heading">'프로젝트'사전 검색 결과</p>
+            </div>
+          </div>
+        </section>
+      </article>
+    </div>
+    <footer class="footer">
+      <address>
+        <p class="developer_address">
+          주소: 경기도 의왕시 내손동 E-MAlL:dbwjddl0430@naver.com
+        </p>
+        <p class="coptright">coptrightⓒLee You Jeong. All Rights Reserved</p>
+      </address>
+    </footer>
+  </body>
+</html>
